@@ -41,7 +41,49 @@ footer{background:#0b1015;color:#929eaa;padding:28px 0;font-size:14px}.footer{di
 const CONTACT={phone:'+79999999999',telegramUsername:'TELEGRAM_USERNAME'};
 function tgUrl(){if(!CONTACT.telegramUsername||CONTACT.telegramUsername==='TELEGRAM_USERNAME')return null;return 'https://t.me/'+CONTACT.telegramUsername.replace('@','')}
 for(const id of ['telegramLink','footerTelegram','floatingTelegram']){const el=document.getElementById(id);if(!el)continue;const url=tgUrl();if(url)el.href=url;else el.addEventListener('click',e=>{e.preventDefault();alert('Перед публикацией укажите реальный Telegram username компании в настройках страницы.');});}
-document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('success').classList.add('show');e.target.reset();});
+document.getElementById('leadForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const success = document.getElementById('success');
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  const data = {
+    name: form.elements.name.value.trim(),
+    phone: form.elements.phone.value.trim(),
+    message: form.elements.message.value.trim()
+  };
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Отправляем...';
+
+  try {
+    const response = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+
+    if (!response.ok || !result.ok) {
+      throw new Error('Не удалось отправить заявку');
+    }
+
+    success.textContent = '✅ Заявка отправлена. Мы свяжемся с вами в ближайшее время.';
+    success.classList.add('show');
+    form.reset();
+
+  } catch (error) {
+    success.textContent = '❌ Не удалось отправить заявку. Попробуйте позвонить или написать в Telegram.';
+    success.classList.add('show');
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = 'Отправить заявку';
+  }
+});
 </script>
 </body>
 </html>
