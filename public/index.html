@@ -6,84 +6,270 @@
 <meta name="description" content="Чистый след — уборка снега, наледи и сосулек с крыш и территорий в Нижнем Новгороде. Выезд в течение 24 часов. Возможен срочный выезд.">
 <title>Чистый след — уборка снега и наледи в Нижнем Новгороде</title>
 <style>
-:root{--bg:#f3f6f8;--surface:#fff;--dark:#10161d;--dark2:#16212b;--text:#17212a;--muted:#66737f;--line:#dce4eb;--accent:#1769d2;--accent2:#0d4f9e;--ice:#eaf4ff;--shadow:0 18px 45px rgba(16,22,29,.08);--r:20px;--max:1180px}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;overflow-x:hidden}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
-.topbar{background:var(--dark);color:#fff;font-size:14px}.topbar-inner{min-height:40px;display:flex;justify-content:space-between;align-items:center;gap:20px}.topbar-note{opacity:.72}.topbar a{font-weight:800}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);border-bottom:1px solid rgba(220,228,235,.9)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:950}.brand-mark{width:42px;height:42px;border-radius:12px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:21px}.brand-name{font-size:20px;letter-spacing:-.02em}.nav-links{display:flex;gap:28px;color:#43515d;font-weight:700;font-size:15px}.nav-links a:hover{color:var(--accent)}.nav-cta{padding:0 18px;min-height:44px;display:inline-flex;align-items:center;border-radius:12px;background:var(--dark);color:#fff;font-weight:850}
-.hero{position:relative;min-height:690px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(8,14,19,.92) 0%,rgba(8,14,19,.72) 48%,rgba(8,14,19,.35) 100%),url('https://images.unsplash.com/photo-1543968996-ee822b8176ba?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(transparent,var(--bg));pointer-events:none}.hero-inner{position:relative;z-index:2;padding:110px 0 120px}.eyebrow{display:inline-flex;padding:8px 13px;border:1px solid rgba(255,255,255,.23);background:rgba(255,255,255,.08);border-radius:999px;font-size:14px;font-weight:800;margin-bottom:22px}.hero h1{max-width:920px;font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.045em;margin-bottom:24px}.hero h1 span{color:#9dcbff}.hero-lead{max-width:760px;color:rgba(255,255,255,.84);font-size:clamp(18px,2.1vw,22px);margin-bottom:30px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}.btn{min-height:54px;padding:0 22px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:900;border:1px solid transparent;cursor:pointer;transition:.2s}.btn-primary{background:#fff;color:var(--dark)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.18)}.btn-ghost{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.24);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.12)}.facts{display:flex;flex-wrap:wrap;gap:10px}.fact{padding:10px 13px;border-radius:12px;background:rgba(8,14,19,.55);border:1px solid rgba(255,255,255,.14);font-size:14px;font-weight:750;color:rgba(255,255,255,.92)}
-section{padding:90px 0}.head{max-width:760px;margin:0 auto 44px;text-align:center}.kicker{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:950;margin-bottom:10px}.head h2{font-size:clamp(30px,4vw,48px);line-height:1.07;letter-spacing:-.04em;margin-bottom:13px}.head p{color:var(--muted);font-size:18px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:var(--shadow)}.icon{width:48px;height:48px;border-radius:14px;background:var(--ice);display:grid;place-items:center;color:var(--accent);font-weight:950;font-size:21px;margin-bottom:20px}.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted)}
-.services{background:#fff}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.service{background:linear-gradient(135deg,#fff,#f6fbff);border:1px solid var(--line);border-radius:var(--r);padding:27px;display:flex;justify-content:space-between;gap:20px}.service h3{font-size:22px;margin-bottom:7px}.service p{color:var(--muted)}.num{width:46px;height:46px;border-radius:14px;background:var(--dark);color:#fff;display:grid;place-items:center;font-weight:900;flex:0 0 auto}
-.why{background:var(--dark);color:#fff}.why .head p{color:#b7c1ca}.why-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px}.why-main{padding:30px;border:1px solid rgba(255,255,255,.1);border-radius:var(--r);background:linear-gradient(135deg,#16212b,#10161d)}.why-item{display:flex;gap:13px;padding:17px 0;border-top:1px solid rgba(255,255,255,.08)}.why-item:first-child{border-top:0}.check{width:27px;height:27px;border-radius:8px;background:#245d9e;color:#dceeff;display:grid;place-items:center;flex:0 0 auto;font-weight:950}.why-item strong{display:block;margin-bottom:3px}.why-item span{color:#abb6c0}.numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.number{padding:26px;border:1px solid rgba(255,255,255,.1);border-radius:var(--r);background:#151e27}.number strong{display:block;font-size:43px;line-height:1;font-weight:950;letter-spacing:-.04em}.number span{display:block;margin-top:8px;color:#aeb8c2}
-.steps{background:var(--bg)}.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:23px}.step-num{font-size:13px;font-weight:950;color:var(--accent);margin-bottom:14px}.step h3{font-size:19px;margin-bottom:8px}.step p{color:var(--muted)}
-.portfolio{background:#fff}.portfolio-box{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;background:#f8fbfd;border:1px dashed #c7d2dc;border-radius:var(--r);padding:30px}.photo{min-height:320px;border-radius:18px;background:linear-gradient(135deg,rgba(16,22,29,.12),rgba(23,105,210,.22)),url('https://images.unsplash.com/photo-1485095329183-d0797cdc5676?auto=format&fit=crop&w=1200&q=80') center/cover;position:relative}.tag{position:absolute;left:15px;top:15px;background:rgba(16,22,29,.72);color:#fff;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:850}.portfolio-note h3{font-size:28px;line-height:1.1;margin-bottom:10px}.portfolio-note p{color:var(--muted);margin-bottom:18px}
-.cta{background:radial-gradient(circle at 85% 15%,rgba(23,105,210,.26),transparent 36%),var(--dark);color:#fff}.cta-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:30px;align-items:center}.cta h2{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin-bottom:15px}.cta-copy{color:#b8c1ca;font-size:18px}.contact-card{background:#fff;color:var(--text);border-radius:var(--r);padding:26px;box-shadow:0 25px 55px rgba(0,0,0,.18)}.contact-card h3{font-size:23px;margin-bottom:6px}.small{font-size:14px;color:var(--muted);margin-bottom:18px}.field{margin-bottom:12px}.field label{display:block;font-size:13px;font-weight:800;color:#586673;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid #d4dde5;border-radius:11px;padding:12px 13px;background:#fbfcfd;outline:none}.field textarea{min-height:82px;resize:vertical}.field input:focus,.field textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(23,105,210,.1)}.contact-card .btn{width:100%;background:var(--accent);color:#fff}.contact-card .btn:hover{background:var(--accent2)}.note{margin-top:10px;font-size:11px;line-height:1.45;color:#8b97a2}.success{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;background:#e9f7ef;border:1px solid #b7dfc4;color:#1e6337;font-size:14px}.success.show{display:block}
-footer{background:#0b1015;color:#929eaa;padding:28px 0;font-size:14px}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer-links a:hover{color:#fff}.float{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:9px}.float a{flex:1;min-height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 10px 24px rgba(0,0,0,.2)}.float-call{background:var(--dark);color:#fff}.float-tg{background:#229ed9;color:#fff}
-@media(max-width:980px){.nav-links{display:none}.grid3,.steps-grid{grid-template-columns:repeat(2,1fr)}.why-grid,.cta-grid,.portfolio-box{grid-template-columns:1fr}.hero{min-height:650px}.hero-inner{padding:90px 0 110px}}
-@media(max-width:700px){.container{width:min(var(--max),calc(100% - 28px))}.topbar-inner{padding:8px 0}.topbar-note{display:none}.nav{height:66px}.nav-cta{display:none}.hero h1{font-size:43px}.hero-lead{font-size:17px}.grid3,.grid2,.steps-grid,.numbers{grid-template-columns:1fr}section{padding:68px 0}.service{padding:22px}.photo{min-height:230px}.float{display:flex}footer{padding-bottom:82px}}
+:root{
+  --bg:#f3f7fa;--surface:#fff;--dark:#10161d;--dark2:#17212b;--text:#17202a;
+  --muted:#64717e;--line:#dce5ec;--accent:#8bd12f;--accent-dark:#65a81d;
+  --blue:#1970d9;--blue2:#0f4f9c;--shadow:0 18px 45px rgba(16,22,29,.08);--r:20px;--c:1180px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+.container{width:min(var(--c),calc(100% - 40px));margin:auto}
+.topbar{background:var(--dark);color:#fff;font-size:14px}
+.topbar-inner{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topbar-note{opacity:.72}.topbar a{font-weight:800}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900}
+.brand img{width:172px;height:54px;object-fit:contain;object-position:left center}
+.nav-links{display:flex;gap:28px;color:#41505d;font-weight:700;font-size:15px}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:12px;background:var(--dark);color:#fff;font-weight:850}
+.hero{position:relative;min-height:720px;display:flex;align-items:center;color:#fff;background:
+linear-gradient(90deg,rgba(8,15,22,.90) 0%,rgba(8,15,22,.70) 46%,rgba(8,15,22,.25) 100%),
+url("images/work-roof-1.jpg") center/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 72%,var(--bg) 100%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:110px 0 125px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);border-radius:999px;font-size:14px;font-weight:800;margin-bottom:22px}
+.hero h1{max-width:900px;font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.04em;margin-bottom:24px}
+.hero h1 span{color:#bdf080}
+.hero-lead{max-width:720px;color:rgba(255,255,255,.86);font-size:clamp(18px,2.2vw,22px);margin-bottom:30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.btn{min-height:54px;padding:0 22px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:850;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--accent);color:#10200a}.btn-primary:hover{background:#9be64a;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--dark)}.btn-light:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.18)}
+.btn-outline{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.05);color:#fff}.btn-outline:hover{background:rgba(255,255,255,.12)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px}
+.fact{padding:10px 13px;background:rgba(11,18,25,.55);border:1px solid rgba(255,255,255,.16);border-radius:12px;color:rgba(255,255,255,.93);font-size:14px;font-weight:750}
+section{padding:92px 0}.head{max-width:760px;margin-bottom:42px}.kicker{color:var(--blue);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.title{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.035em;margin-bottom:14px}.lead{color:var(--muted);font-size:18px}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:var(--shadow)}
+.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#eef9df;color:var(--accent-dark);font-size:22px;font-weight:900;margin-bottom:20px}
+.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted)}
+.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.service{border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;justify-content:space-between;gap:20px;background:linear-gradient(135deg,#fff,#f6fbff)}
+.service h3{font-size:22px;margin-bottom:7px}.service p{color:var(--muted)}
+.service-num{flex:0 0 46px;width:46px;height:46px;border-radius:14px;background:var(--dark);color:#fff;display:grid;place-items:center;font-weight:850}
+.why{background:var(--dark);color:#fff}.why .lead{color:#b8c1ca}
+.why-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px}.why-main{padding:34px;border:1px solid rgba(255,255,255,.10);border-radius:var(--r);background:linear-gradient(135deg,#151e27,#10161d)}
+.why-list{display:grid;gap:14px;margin-top:6px}.why-item{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08)}
+.check{width:26px;height:26px;border-radius:8px;background:#315d18;color:#dfffae;display:grid;place-items:center;flex:0 0 auto;font-size:14px;font-weight:900}
+.why-item strong{display:block;margin-bottom:3px}.why-item span{color:#aeb8c2}.numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.number-card{padding:28px;border-radius:var(--r);background:#151e27;border:1px solid rgba(255,255,255,.10)}
+.number{font-size:44px;font-weight:950;letter-spacing:-.04em}.number-card p{color:#aeb8c2;margin-top:6px}
+.steps{background:var(--bg)}.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}.step-num{font-size:13px;font-weight:900;color:var(--blue);margin-bottom:16px}.step h3{font-size:19px;margin-bottom:8px}.step p{color:var(--muted)}
+.work{background:#fff}.work-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.work-main,.work-side{border-radius:var(--r);overflow:hidden;position:relative}
+.work-main img{height:460px;width:100%;object-fit:cover}.work-side{display:grid;grid-template-rows:1fr 1fr;gap:18px}.work-side img{height:221px;width:100%;object-fit:cover;border-radius:var(--r)}
+.work-label{position:absolute;left:16px;bottom:16px;background:rgba(16,22,29,.78);color:#fff;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:800;z-index:2}
+.reviews{background:var(--bg)}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
+.review-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:14px}.review-name{font-weight:850}.stars{color:#f2b01e;letter-spacing:1px}.review p{color:#455462}.review small{display:block;margin-top:14px;color:#8794a0;font-size:12px}
+.demo-note{margin-top:22px;padding:14px 16px;border-radius:14px;background:#fff8df;border:1px solid #eadcae;color:#6a5b26;font-size:13px}
+.cta{background:radial-gradient(circle at 80% 20%,rgba(25,112,217,.24),transparent 36%),var(--dark);color:#fff}
+.cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.cta h2{font-size:clamp(32px,4vw,50px);line-height:1.06;letter-spacing:-.04em;margin-bottom:15px}.cta p{color:#b7c0c9;font-size:18px}
+.form-card{background:#fff;color:var(--text);border-radius:var(--r);padding:26px;box-shadow:0 25px 55px rgba(0,0,0,.18)}
+.form-card h3{font-size:22px;margin-bottom:7px}.small{font-size:14px;color:var(--muted);margin-bottom:18px}
+.field{margin-bottom:12px}.field label{display:block;font-size:13px;font-weight:750;color:#586673;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid #d4dde5;border-radius:11px;padding:12px 13px;background:#fbfcfd;outline:none}.field textarea{min-height:86px;resize:vertical}
+.form-card .btn-primary{width:100%;margin-top:6px;border:0}.form-note{font-size:11px;line-height:1.45;color:#8a96a2;margin-top:10px}
+.success{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;background:#eaf7ef;border:1px solid #b9e0c6;color:#1e6337;font-size:14px}.success.show{display:block}
+footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:140px;height:44px;object-fit:contain;background:#fff;border-radius:10px;padding:3px}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer-links a:hover{color:#fff}
+.floating{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;gap:10px}.floating a{flex:1;min-height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:850;box-shadow:0 10px 26px rgba(0,0,0,.18)}.float-call{background:var(--dark);color:#fff}.float-tg{background:#229ed9;color:#fff}
+@media(max-width:980px){.nav-links{display:none}.problem-grid,.steps-grid,.review-grid{grid-template-columns:repeat(2,1fr)}.why-grid,.cta-grid,.work-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.container{width:min(var(--c),calc(100% - 28px))}.topbar-inner{padding:8px 0}.topbar-note{display:none}.nav{height:66px}.brand img{width:150px;height:48px}.nav-cta{display:none}.hero{min-height:660px}.hero-inner{padding:80px 0 100px}.hero h1{font-size:43px}.hero-lead{font-size:17px}.problem-grid,.service-grid,.steps-grid,.numbers,.review-grid{grid-template-columns:1fr}.work-main img{height:330px}.work-side{display:grid;grid-template-rows:1fr 1fr}.work-side img{height:180px}.cta-grid{gap:25px}section{padding:70px 0}.floating{display:flex}footer{padding-bottom:86px}}
 </style>
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><div class="topbar-note">Нижний Новгород • работаем по всему городу</div><a href="tel:+79999999999">8-999-999-99-99</a></div></div>
-<header><div class="container nav"><a class="brand" href="#"><span class="brand-mark">↗</span><span class="brand-name">Чистый след</span></a><nav class="nav-links"><a href="#services">Услуги</a><a href="#why">Почему мы</a><a href="#steps">Как работаем</a><a href="#contacts">Контакты</a></nav><a class="nav-cta" href="#contacts">Получить расчёт</a></div></header>
+
+<header>
+<div class="container nav">
+  <a class="brand" href="#"><img src="images/logo-full.png" alt="Чистый след"></a>
+  <nav class="nav-links">
+    <a href="#services">Услуги</a><a href="#why">Почему мы</a><a href="#steps">Как работаем</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a class="nav-cta" href="#contacts">Получить расчёт</a>
+</div>
+</header>
+
 <main>
-<section class="hero"><div class="container hero-inner"><div class="eyebrow">Уборка снега • Нижний Новгород</div><h1>Уборка снега и наледи <span>с крыш и территорий</span></h1><p class="hero-lead">Очищаем крыши, убираем снег, наледь и сосульки, расчищаем территории и самостоятельно вывозим снег. Выезд — в течение суток.</p><div class="actions"><a class="btn btn-primary" href="#contacts">Получить расчёт</a><a class="btn btn-ghost" href="tel:+79999999999">Позвонить</a></div><div class="facts"><div class="fact">100+ объектов с 2021 года</div><div class="fact">Возможен срочный выезд</div><div class="fact">Работаем по всему Нижнему Новгороду</div></div></div></section>
-<section><div class="container"><div class="head"><div class="kicker">Когда нужно действовать</div><h2>Уберём снег до того, как он станет проблемой</h2><p>Помогаем быстро решить задачи, которые возникают после сильных снегопадов и образования наледи.</p></div><div class="grid3"><article class="card"><div class="icon">⌂</div><h3>Снег на крыше</h3><p>Убираем снег с крыш частных и многоквартирных домов.</p></article><article class="card"><div class="icon">!</div><h3>Наледь и сосульки</h3><p>Очищаем опасные участки, где наледь и сосульки создают риск.</p></article><article class="card"><div class="icon">↗</div><h3>Заснеженная территория</h3><p>Освобождаем территории и проезды для нормального движения транспорта.</p></article></div></div></section>
-<section class="services" id="services"><div class="container"><div class="head"><div class="kicker">Услуги</div><h2>Работы под одну задачу — очистить объект полностью</h2><p>Стоимость рассчитывается индивидуально с учётом площади и сложности доступа.</p></div><div class="grid2"><article class="service"><div><h3>Уборка снега с крыш</h3><p>Частные и многоквартирные дома.</p></div><div class="num">01</div></article><article class="service"><div><h3>Удаление наледи и сосулек</h3><p>Очистка опасных участков кровли.</p></div><div class="num">02</div></article><article class="service"><div><h3>Уборка территорий</h3><p>Придомовые территории и территории предприятий.</p></div><div class="num">03</div></article><article class="service"><div><h3>Вывоз снега</h3><p>Снег вывозим самостоятельно, без поиска отдельного подрядчика.</p></div><div class="num">04</div></article></div></div></section>
-<section class="why" id="why"><div class="container"><div class="head"><div class="kicker">Почему «Чистый след»</div><h2>Когда важно быстро договориться и быстро приехать</h2><p>Конкретные преимущества, которые клиент получает ещё до начала работ.</p></div><div class="why-grid"><div class="why-main"><div class="why-item"><div class="check">✓</div><div><strong>Выезд в течение 24 часов</strong><span>Заранее согласовываем удобное время.</span></div></div><div class="why-item"><div class="check">✓</div><div><strong>Возможен срочный выезд</strong><span>Для ситуаций, когда ждать нельзя.</span></div></div><div class="why-item"><div class="check">✓</div><div><strong>Объекты разной сложности</strong><span>Работаем с частными домами, многоквартирными и другими объектами.</span></div></div><div class="why-item"><div class="check">✓</div><div><strong>Самостоятельный вывоз</strong><span>Закрываем задачу целиком.</span></div></div></div><div class="numbers"><div class="number"><strong>2021</strong><span>год начала работы</span></div><div class="number"><strong>100+</strong><span>объектов разной сложности</span></div><div class="number"><strong>24 ч</strong><span>срок выезда после согласования</span></div><div class="number"><strong>НН</strong><span>работаем по всему Нижнему Новгороду</span></div></div></div></div></section>
-<section class="steps" id="steps"><div class="container"><div class="head"><div class="kicker">Как работаем</div><h2>От фотографии объекта до чистой территории</h2><p>Начать можно с простого сообщения в Telegram или по телефону.</p></div><div class="steps-grid"><article class="step"><div class="step-num">ШАГ 01</div><h3>Отправляете фото</h3><p>Показываете объект и коротко описываете, что нужно убрать.</p></article><article class="step"><div class="step-num">ШАГ 02</div><h3>Обсуждаем стоимость</h3><p>Расчёт зависит от площади и сложности доступа.</p></article><article class="step"><div class="step-num">ШАГ 03</div><h3>Согласовываем выезд</h3><p>Определяем дату и время. Возможен срочный выезд.</p></article><article class="step"><div class="step-num">ШАГ 04</div><h3>Выполняем работу</h3><p>Убираем снег, наледь и сосульки и вывозим снег.</p></article></div></div></section>
-<section class="portfolio"><div class="container"><div class="head"><div class="kicker">Наши работы</div><h2>Покажем результат на реальных объектах</h2><p>Блок подготовлен под реальные фотографии «до / после».</p></div><div class="portfolio-box"><div class="photo"><div class="tag">Добавить реальные фото клиента перед публикацией</div></div><div class="portfolio-note"><h3>100+ объектов с 2021 года</h3><p>После получения фотографий заменим демонстрационное изображение на реальные работы «Чистого следа» и добавим подписи к объектам.</p><a class="btn btn-primary" style="background:var(--dark)" href="#contacts">Получить расчёт</a></div></div></div></section>
-<section class="cta" id="contacts"><div class="container cta-grid"><div><div class="kicker" style="color:#8fc2ff">Расчёт стоимости</div><h2>Пришлите фото объекта — обсудим задачу</h2><p class="cta-copy">Напишите в Telegram или оставьте номер телефона. Стоимость рассчитывается индивидуально с учётом площади и сложности доступа.</p><div class="actions" style="margin-top:22px"><a class="btn btn-ghost" id="telegramLink" href="#">Написать в Telegram</a><a class="btn btn-primary" href="tel:+79999999999">Позвонить</a></div></div><div class="contact-card"><h3>Заказать расчёт</h3><p class="small">Оставьте номер — свяжемся с вами и обсудим объект.</p><form id="leadForm"><div class="field"><label for="name">Имя</label><input id="name" required placeholder="Как к вам обращаться?"></div><div class="field"><label for="phone">Телефон</label><input id="phone" type="tel" required placeholder="+7 (___) ___-__-__"></div><div class="field"><label for="message">Комментарий</label><textarea id="message" placeholder="Что нужно убрать? Можно указать адрес или написать, что пришлёте фото."></textarea></div><button class="btn" type="submit">Отправить заявку</button><div class="note">Демо-режим: перед публикацией подключить реальную отправку заявки в Telegram / CRM / электронную почту клиента.</div><div class="success" id="success">Заявка подготовлена. Реальный канал отправки подключается перед публикацией.</div></form></div></div></section>
+<section class="hero">
+<div class="container hero-inner">
+  <div class="eyebrow">Уборка снега • Нижний Новгород</div>
+  <h1>Уборка снега и наледи <span>с крыш и территорий</span></h1>
+  <p class="hero-lead">Очищаем крыши, убираем снег, наледь и сосульки, расчищаем территории и самостоятельно вывозим снег. Выезд — в течение суток.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#contacts">Получить расчёт</a>
+    <a class="btn btn-light" href="tel:+79999999999">Позвонить</a>
+  </div>
+  <div class="hero-facts">
+    <div class="fact">100+ объектов с 2021 года</div><div class="fact">Возможен срочный выезд</div><div class="fact">Работаем по всему Нижнему Новгороду</div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="head"><div class="kicker">Когда нужно действовать</div><h2 class="title">Уберём снег до того, как он станет проблемой</h2><p class="lead">Помогаем быстро решить задачи, которые возникают после сильных снегопадов и образования наледи.</p></div>
+  <div class="problem-grid">
+    <article class="card"><div class="icon">⌂</div><h3>Снег на крыше</h3><p>Убираем снег с крыш частных и многоквартирных домов.</p></article>
+    <article class="card"><div class="icon">!</div><h3>Наледь и сосульки</h3><p>Очищаем опасные участки, где наледь и сосульки создают риск.</p></article>
+    <article class="card"><div class="icon">↗</div><h3>Заснеженная территория</h3><p>Освобождаем территории и проезды для нормального движения транспорта.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+  <div class="head"><div class="kicker">Услуги</div><h2 class="title">Работы под одну задачу — очистить объект полностью</h2><p class="lead">Стоимость рассчитывается индивидуально с учётом площади и сложности доступа.</p></div>
+  <div class="service-grid">
+    <article class="service"><div><h3>Уборка снега с крыш</h3><p>Частные и многоквартирные дома.</p></div><div class="service-num">01</div></article>
+    <article class="service"><div><h3>Удаление наледи и сосулек</h3><p>Очистка опасных участков кровли.</p></div><div class="service-num">02</div></article>
+    <article class="service"><div><h3>Уборка территорий</h3><p>Придомовые территории и территории предприятий.</p></div><div class="service-num">03</div></article>
+    <article class="service"><div><h3>Вывоз снега</h3><p>Снег вывозим самостоятельно, без поиска отдельного подрядчика.</p></div><div class="service-num">04</div></article>
+  </div>
+</div>
+</section>
+
+<section class="why" id="why">
+<div class="container">
+  <div class="head"><div class="kicker">Почему «Чистый след»</div><h2 class="title">Когда важно быстро договориться и быстро приехать</h2><p class="lead">Конкретные преимущества, которые клиент получает ещё до начала работ.</p></div>
+  <div class="why-grid">
+    <div class="why-main"><div class="why-list">
+      <div class="why-item"><div class="check">✓</div><div><strong>Выезд в течение 24 часов</strong><span>Заранее согласовываем удобное время.</span></div></div>
+      <div class="why-item"><div class="check">✓</div><div><strong>Возможен срочный выезд</strong><span>Для ситуаций, когда ждать нельзя.</span></div></div>
+      <div class="why-item"><div class="check">✓</div><div><strong>Объекты разной сложности</strong><span>Работаем с частными домами, многоквартирными и другими объектами.</span></div></div>
+      <div class="why-item"><div class="check">✓</div><div><strong>Самостоятельно вывозим снег</strong><span>Закрываем задачу целиком.</span></div></div>
+    </div></div>
+    <div class="numbers">
+      <div class="number-card"><div class="number">2021</div><p>год начала работы</p></div>
+      <div class="number-card"><div class="number">100+</div><p>объектов разной сложности</p></div>
+      <div class="number-card"><div class="number">24 ч</div><p>срок выезда после согласования</p></div>
+      <div class="number-card"><div class="number">НН</div><p>работаем по всему Нижнему Новгороду</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="steps" id="steps">
+<div class="container">
+  <div class="head"><div class="kicker">Как работаем</div><h2 class="title">От фотографии объекта до чистой территории</h2><p class="lead">Начать можно с простого сообщения в Telegram или по телефону.</p></div>
+  <div class="steps-grid">
+    <article class="step"><div class="step-num">ШАГ 01</div><h3>Отправляете фото</h3><p>Показываете объект и коротко описываете, что нужно убрать.</p></article>
+    <article class="step"><div class="step-num">ШАГ 02</div><h3>Обсуждаем стоимость</h3><p>Расчёт зависит от площади и сложности доступа.</p></article>
+    <article class="step"><div class="step-num">ШАГ 03</div><h3>Согласовываем выезд</h3><p>Определяем дату и время. Возможен срочный выезд.</p></article>
+    <article class="step"><div class="step-num">ШАГ 04</div><h3>Выполняем работу</h3><p>Убираем снег, наледь и сосульки и вывозим снег.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="work">
+<div class="container">
+  <div class="head"><div class="kicker">Наши работы</div><h2 class="title">Реальные фото вместо обещаний</h2><p class="lead">В демонстрационной версии используем предоставленные фотографии. Для боевого сайта сюда можно добавить подписи объектов и формат «до / после».</p></div>
+  <div class="work-grid">
+    <div class="work-main"><img src="images/work-roof-1.jpg" alt="Уборка снега с крыши"><div class="work-label">Уборка снега с крыши</div></div>
+    <div class="work-side">
+      <div><img src="images/work-ice-2.jpg" alt="Удаление наледи и сосулек"><div class="work-label">Удаление наледи и сосулек</div></div>
+      <div><img src="images/snow-removal-4.jpg" alt="Вывоз снега"><div class="work-label">Уборка и вывоз снега</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+<div class="container">
+  <div class="head"><div class="kicker">Отзывы</div><h2 class="title">Как выглядит социальное доказательство</h2><p class="lead">Ниже — тестовый блок на основе отзывов из открытых карточек/сервисов по похожей услуге, чтобы проверить реальную подачу блока.</p></div>
+  <div class="review-grid">
+    <article class="review"><div class="review-head"><div class="review-name">Владислав Б.</div><div class="stars">★★★★★</div></div><p>«Звоните сразу если есть возможность. Много ребят в любом районе города адекватные, активные, выносливые, готовые к заказам.»</p><small>Пример отзыва из сервиса Яндекс Услуги • Нижний Новгород</small></article>
+    <article class="review"><div class="review-head"><div class="review-name">Дмитрий К.</div><div class="stars">★★★★☆</div></div><p>«Предоставляем услуги по уборке и вывозу снега. Делаем всё быстро, качественно и недорого — любые объёмы, любой сложности.»</p><small>Пример отзыва/описания услуги из сервиса Яндекс Услуги • Нижний Новгород</small></article>
+    <article class="review"><div class="review-head"><div class="review-name">Анонимный клиент</div><div class="stars">★★★★★</div></div><p>«Расчёт по звонку, возможен выезд на место. Для больших объёмов используют технику, для узких мест — ручную работу.»</p><small>Тестовый пример формулировки для блока • не отзыв «Чистого следа»</small></article>
+  </div>
+  <div class="demo-note">⚠️ Важно: этот блок пока демонстрационный. Это не отзывы «Чистого следа». Перед публикацией заменяем его на реальные отзывы Александра или убираем.</div>
+</div>
+</section>
+
+<section class="cta" id="contacts">
+<div class="container cta-grid">
+  <div>
+    <div class="kicker" style="color:#9cc8ff">Расчёт стоимости</div>
+    <h2>Пришлите фото объекта — обсудим задачу</h2>
+    <p>Напишите в Telegram или оставьте номер телефона. Стоимость рассчитывается индивидуально с учётом площади и сложности доступа.</p>
+    <div class="hero-actions" style="margin-top:22px">
+      <a class="btn btn-outline" id="telegramLink" href="#">Написать в Telegram</a>
+      <a class="btn btn-light" href="tel:+79999999999">Позвонить</a>
+    </div>
+  </div>
+  <div class="form-card">
+    <h3>Заказать расчёт</h3><p class="small">Оставьте номер — свяжемся с вами и обсудим объект.</p>
+    <form id="leadForm">
+      <div class="field"><label for="name">Имя</label><input id="name" name="name" placeholder="Как к вам обращаться?" required></div>
+      <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required></div>
+      <div class="field"><label for="message">Комментарий</label><textarea id="message" name="message" placeholder="Что нужно убрать?"></textarea></div>
+      <button class="btn btn-primary" type="submit">Отправить заявку</button>
+      <div class="form-note">Форма подключена к Telegram-боту в текущем тестовом проекте.</div>
+      <div class="success" id="success">✅ Заявка отправлена. Мы свяжемся с вами в ближайшее время.</div>
+    </form>
+  </div>
+</div>
+</section>
 </main>
-<footer><div class="container footer"><div>© 2026 «Чистый след» • Нижний Новгород</div><div class="footer-links"><a href="tel:+79999999999">8-999-999-99-99</a><a id="footerTelegram" href="#">Telegram</a></div></div></footer>
-<div class="float"><a class="float-call" href="tel:+79999999999">Позвонить</a><a class="float-tg" id="floatingTelegram" href="#">Telegram</a></div>
+
+<footer>
+<div class="container footer-inner">
+  <div class="footer-brand"><img src="images/logo-full.png" alt="Чистый след"><span>© 2026 «Чистый след» • Нижний Новгород</span></div>
+  <div class="footer-links"><a href="tel:+79999999999">8-999-999-99-99</a><a id="footerTelegram" href="#">Telegram</a></div>
+</div>
+</footer>
+
+<div class="floating"><a class="float-call" href="tel:+79999999999">Позвонить</a><a class="float-tg" id="floatingTelegram" href="#">Telegram</a></div>
+
 <script>
-const CONTACT={phone:'+79999999999',telegramUsername:'TELEGRAM_USERNAME'};
-function tgUrl(){if(!CONTACT.telegramUsername||CONTACT.telegramUsername==='TELEGRAM_USERNAME')return null;return 'https://t.me/'+CONTACT.telegramUsername.replace('@','')}
-for(const id of ['telegramLink','footerTelegram','floatingTelegram']){const el=document.getElementById(id);if(!el)continue;const url=tgUrl();if(url)el.href=url;else el.addEventListener('click',e=>{e.preventDefault();alert('Перед публикацией укажите реальный Telegram username компании в настройках страницы.');});}
-document.getElementById('leadForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const success = document.getElementById('success');
-  const submitButton = form.querySelector('button[type="submit"]');
-
-  const data = {
-    name: form.elements.name.value.trim(),
-    phone: form.elements.phone.value.trim(),
-    message: form.elements.message.value.trim()
-  };
-
-  submitButton.disabled = true;
-  submitButton.textContent = 'Отправляем...';
-
-  try {
-    const response = await fetch('/api/lead', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
-
-    const result = await response.json();
-
-    if (!response.ok || !result.ok) {
-      throw new Error('Не удалось отправить заявку');
+const CONTACT = { telegramUsername: "TELEGRAM_USERNAME" };
+function telegramUrl(){
+  if(!CONTACT.telegramUsername || CONTACT.telegramUsername==="TELEGRAM_USERNAME") return null;
+  return "https://t.me/"+CONTACT.telegramUsername.replace("@","");
+}
+function setupTelegram(){
+  const url=telegramUrl();
+  ["telegramLink","footerTelegram","floatingTelegram"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    if(url){el.href=url;el.target="_blank";el.rel="noopener";}
+    else{
+      el.href="#";
+      el.addEventListener("click",e=>{
+        e.preventDefault();
+        alert("Перед публикацией укажите настоящий Telegram username компании.");
+      });
     }
-
-    success.textContent = '✅ Заявка отправлена. Мы свяжемся с вами в ближайшее время.';
-    success.classList.add('show');
-    form.reset();
-
-  } catch (error) {
-    success.textContent = '❌ Не удалось отправить заявку. Попробуйте позвонить или написать в Telegram.';
-    success.classList.add('show');
-  } finally {
-    submitButton.disabled = false;
-    submitButton.textContent = 'Отправить заявку';
+  });
+}
+document.getElementById("leadForm").addEventListener("submit",async function(e){
+  e.preventDefault();
+  const form=e.target, success=document.getElementById("success"), button=form.querySelector("button");
+  const data={
+    name:form.elements.name.value.trim(),
+    phone:form.elements.phone.value.trim(),
+    message:form.elements.message.value.trim()
+  };
+  button.disabled=true;button.textContent="Отправляем...";
+  try{
+    const response=await fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    const result=await response.json();
+    if(!response.ok || !result.ok) throw new Error("send failed");
+    success.textContent="✅ Заявка отправлена. Мы свяжемся с вами в ближайшее время.";
+    success.classList.add("show");form.reset();
+  }catch(err){
+    success.textContent="❌ Не удалось отправить заявку. Попробуйте позвонить или написать в Telegram.";
+    success.classList.add("show");
+  }finally{
+    button.disabled=false;button.textContent="Отправить заявку";
   }
 });
+setupTelegram();
 </script>
 </body>
 </html>
