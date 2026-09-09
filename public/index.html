@@ -28,7 +28,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 .nav-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:12px;background:var(--dark);color:#fff;font-weight:850}
 .hero{position:relative;min-height:720px;display:flex;align-items:center;color:#fff;background:
 linear-gradient(90deg,rgba(8,15,22,.90) 0%,rgba(8,15,22,.70) 46%,rgba(8,15,22,.25) 100%),
-url("images/work-roof-1.jpg") center/cover}
+url("work-roof-1.jpg") center/cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 72%,var(--bg) 100%);pointer-events:none}
 .hero-inner{position:relative;z-index:2;padding:110px 0 125px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);border-radius:999px;font-size:14px;font-weight:800;margin-bottom:22px}
@@ -87,7 +87,7 @@ footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-in
 
 <header>
 <div class="container nav">
-  <a class="brand" href="#"><img src="images/logo-full.png" alt="Чистый след"></a>
+  <a class="brand" href="#"><img src="logo-full.png" alt="Чистый след"></a>
   <nav class="nav-links">
     <a href="#services">Услуги</a><a href="#why">Почему мы</a><a href="#steps">Как работаем</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
   </nav>
@@ -170,10 +170,10 @@ footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-in
 <div class="container">
   <div class="head"><div class="kicker">Наши работы</div><h2 class="title">Реальные фото вместо обещаний</h2><p class="lead">В демонстрационной версии используем предоставленные фотографии. Для боевого сайта сюда можно добавить подписи объектов и формат «до / после».</p></div>
   <div class="work-grid">
-    <div class="work-main"><img src="images/work-roof-1.jpg" alt="Уборка снега с крыши"><div class="work-label">Уборка снега с крыши</div></div>
+    <div class="work-main"><img src="work-roof-1.jpg" alt="Уборка снега с крыши"><div class="work-label">Уборка снега с крыши</div></div>
     <div class="work-side">
-      <div><img src="images/work-ice-2.jpg" alt="Удаление наледи и сосулек"><div class="work-label">Удаление наледи и сосулек</div></div>
-      <div><img src="images/snow-removal-4.jpg" alt="Вывоз снега"><div class="work-label">Уборка и вывоз снега</div></div>
+      <div><img src="work-ice-2.jpg" alt="Удаление наледи и сосулек"><div class="work-label">Удаление наледи и сосулек</div></div>
+      <div><img src="snow-removal-4.jpg" alt="Вывоз снега"><div class="work-label">Уборка и вывоз снега</div></div>
     </div>
   </div>
 </div>
@@ -181,13 +181,46 @@ footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-in
 
 <section class="reviews" id="reviews">
 <div class="container">
-  <div class="head"><div class="kicker">Отзывы</div><h2 class="title">Как выглядит социальное доказательство</h2><p class="lead">Ниже — тестовый блок на основе отзывов из открытых карточек/сервисов по похожей услуге, чтобы проверить реальную подачу блока.</p></div>
-  <div class="review-grid">
-    <article class="review"><div class="review-head"><div class="review-name">Владислав Б.</div><div class="stars">★★★★★</div></div><p>«Звоните сразу если есть возможность. Много ребят в любом районе города адекватные, активные, выносливые, готовые к заказам.»</p><small>Пример отзыва из сервиса Яндекс Услуги • Нижний Новгород</small></article>
-    <article class="review"><div class="review-head"><div class="review-name">Дмитрий К.</div><div class="stars">★★★★☆</div></div><p>«Предоставляем услуги по уборке и вывозу снега. Делаем всё быстро, качественно и недорого — любые объёмы, любой сложности.»</p><small>Пример отзыва/описания услуги из сервиса Яндекс Услуги • Нижний Новгород</small></article>
-    <article class="review"><div class="review-head"><div class="review-name">Анонимный клиент</div><div class="stars">★★★★★</div></div><p>«Расчёт по звонку, возможен выезд на место. Для больших объёмов используют технику, для узких мест — ручную работу.»</p><small>Тестовый пример формулировки для блока • не отзыв «Чистого следа»</small></article>
+  <div class="head">
+    <div class="kicker">Отзывы</div>
+    <h2 class="title">Что говорят клиенты</h2>
+    <p class="lead">Реальные отзывы клиентов «Чистого следа».</p>
   </div>
-  <div class="demo-note">⚠️ Важно: этот блок пока демонстрационный. Это не отзывы «Чистого следа». Перед публикацией заменяем его на реальные отзывы Александра или убираем.</div>
+
+  <div class="review-grid">
+    <article class="review">
+      <div class="review-head">
+        <div>
+          <div class="review-name">Инкогнито 5261</div>
+          <small>19 февраля 2023</small>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p>Грамотные ребята. Быстро оценили объем работы, согласовали цены и в короткие сроки сломали. Оставили ровный чистый участок. Результатом доволен.</p>
+    </article>
+
+    <article class="review">
+      <div class="review-head">
+        <div>
+          <div class="review-name">Алексей Сурков</div>
+          <small>11 июня</small>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p>Без преувеличения это лучшая контора в РФ. После ухода IKEA, у них самый большой ассортимент - от навоза, до утеплителя. Практически бесплатно. Скоро наверное сами доплачивать буду.</p>
+    </article>
+
+    <article class="review">
+      <div class="review-head">
+        <div>
+          <div class="review-name">Алексей Сергеевич</div>
+          <small>16 февраля 2020</small>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p>Очень быстрая и качественная доставка заказвал песок привезли вовремя и разгрузили в несколько мест грамотно.</p>
+    </article>
+  </div>
 </div>
 </section>
 
@@ -219,7 +252,7 @@ footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-in
 
 <footer>
 <div class="container footer-inner">
-  <div class="footer-brand"><img src="images/logo-full.png" alt="Чистый след"><span>© 2026 «Чистый след» • Нижний Новгород</span></div>
+  <div class="footer-brand"><img src="logo-full.png" alt="Чистый след"><span>© 2026 «Чистый след» • Нижний Новгород</span></div>
   <div class="footer-links"><a href="tel:+79999999999">8-999-999-99-99</a><a id="footerTelegram" href="#">Telegram</a></div>
 </div>
 </footer>
@@ -227,7 +260,7 @@ footer{background:#0b1015;color:#94a0ab;padding:28px 0;font-size:14px}.footer-in
 <div class="floating"><a class="float-call" href="tel:+79999999999">Позвонить</a><a class="float-tg" id="floatingTelegram" href="#">Telegram</a></div>
 
 <script>
-const CONTACT = { telegramUsername: "TELEGRAM_USERNAME" };
+const CONTACT = { telegramUsername: "grandnukem" };
 function telegramUrl(){
   if(!CONTACT.telegramUsername || CONTACT.telegramUsername==="TELEGRAM_USERNAME") return null;
   return "https://t.me/"+CONTACT.telegramUsername.replace("@","");
