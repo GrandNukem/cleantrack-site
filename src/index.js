@@ -52,6 +52,11 @@ export default {
         const name = String(data.name || "").trim();
         const phone = String(data.phone || "").trim();
         const message = String(data.message || "").trim();
+        const website = String(data.website || "").trim();
+
+if (website) {
+  return json({ ok: true }, 200);
+}
 
         // Обязательные поля
         if (!name || !phone) {
